@@ -1,0 +1,180 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    background: #0d6efd;
+    padding: 20px 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f8f9fa;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #0d6efd;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: #0d6efd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #0b5ed7;
+}
+
+/* Sections */
+section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #0d6efd;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    padding: 15px 30px;
+    border: 2px solid #0d6efd;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background: #0d6efd;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0b5ed7;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
