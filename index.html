@@ -1,85 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M S Veerendra | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MS Veerendra — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <!-- Header / Navbar -->
-    <header>
-        <nav>
-            <div class="logo">MSV</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Hello, I'm <span>M S Veerendra</span></h1>
-        <p>Front-End Developer | Java Full Stack Enthusiast</p>
-        <a href="#projects" class="btn">View My Work</a>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate developer with skills in HTML, CSS, JavaScript, Java, and React. I love building responsive, user-friendly websites and web applications.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">React.js</div>
-            <div class="skill">Java</div>
-            <div class="skill">Spring Boot</div>
+  <!-- ================= NAVBAR ================= -->
+  <header>
+    <div class="nav-wrap">
+      <div class="brand">
+        <div class="logo">MS</div>
+        <div class="brand-text">
+          <div class="name">M S Veerendra</div>
+          <div class="subtitle">Java Full Stack • Final Year CSE</div>
         </div>
-    </section>
+      </div>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>Personal portfolio using HTML, CSS, and Flexbox/Grid layouts. Fully responsive design.</p>
-            </div>
-            <div class="project-card">
-                <h3>Plant Disease Prediction</h3>
-                <p>Flask + CNN model project to predict plant diseases from images and CSV datasets.</p>
-            </div>
-            <div class="project-card">
-                <h3>News Category Analysis</h3>
-                <p>NLP & ML project using Python, Scikit-learn, Pandas, and Flask for news categorization.</p>
-            </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a class="cta" href="#contact">Contact</a>
+      </nav>
+
+      <!-- mobile menu toggle (simple) -->
+      <button id="menuToggle" aria-label="Toggle menu" class="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero" id="top">
+    <div class="intro">
+      <span class="eyebrow">Computer Science • Java Full Stack Developer</span>
+      <h1>
+        Hi, I’m
+        <span class="accent-text">M S Veerendra</span>
+        <br/>
+        <small class="muted">I build backend systems & rich UIs.</small>
+      </h1>
+
+      <div class="role">Java • Spring Boot • React • MySQL • Quantum ML explorer</div>
+
+      <p class="blurb muted">
+        Passionate about building scalable applications, optimizing database workflows,
+        and designing clean UI/UX. Currently working as a Java Full Stack Intern at
+        Dhee Coding Lab.
+      </p>
+
+      <div class="hero-ctas">
+        <a class="btn" href="#projects">🔭 View Projects</a>
+        <a class="btn ghost" href="mailto:msveerendraveerendra9954@gmail.com">✉️ Email</a>
+        <a class="btn ghost" href="tel:+916362435914">📞 Call</a>
+      </div>
+
+      <div class="pills">
+        <div class="pill">Open to: Full-time / Internship</div>
+        <div class="pill">Location: Bangalore / Shivamogga</div>
+      </div>
+    </div>
+
+    <aside class="hero-card">
+      <div class="profile">
+        <div class="avatar">MS V</div>
+        <div>
+          <div class="name-strong">M S Veerendra</div>
+          <div class="small">Java Full Stack Intern @ Dhee Coding Lab</div>
+          <div class="small muted" style="margin-top:8px;">Final Year, VTU • CGPA: 8.5</div>
         </div>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="contact-quick">
+        <div class="small"><strong>Location</strong><br/>Bangalore</div>
+        <div class="small"><strong>Email</strong><br/>msveerendraveerendra9954@gmail.com</div>
+        <div class="small"><strong>Resume</strong><br/><a href="#" class="muted">Download</a></div>
+      </div>
+
+      <div class="socials">
+        <a class="ghost btn" href="https://github.com/Veerendra1104" target="_blank">GitHub</a>
+        <a class="ghost btn" href="https://linkedin.com/in/m-s-veerendra-49ab81253" target="_blank">LinkedIn</a>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+    <section id="about" class="card-section">
+      <div class="grid-2">
+        <div>
+          <h2>About Me</h2>
+          <p class="muted">
+            I am a Java Full Stack developer with strong foundations in OOP,
+            Spring Boot, SQL, React, and scalable system design.
+            I enjoy solving problems and exploring new technologies like
+            Quantum Machine Learning.
+          </p>
+
+          <h3>Highlights</h3>
+          <ul class="muted">
+            <li>Quantum Alzheimer’s prediction using Qiskit (final year project).</li>
+            <li>JWT-based Portfolio Builder (Spring Boot + React).</li>
+            <li>Hibernate Movie-Actor management system.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Quick Stats</h3>
+          <div class="contact-card">🎓 B.E CSE — PESITM Shivamogga</div>
+          <div class="contact-card">🏆 Academics: PUC 95.64% • SSLC 93.8%</div>
+          <div class="contact-card">🧑‍💻 Intern @ Dhee Coding Lab</div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="skills" class="card-section">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">Java</div>
+        <div class="skill">Spring Boot</div>
+        <div class="skill">Hibernate • JPA</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">HTML • CSS • JavaScript</div>
+        <div class="skill">React.js</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Linux CLI</div>
+        <div class="skill">Quantum ML (Qiskit)</div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 M S Veerendra. All rights reserved.</p>
+    <section id="projects" class="card-section">
+      <h2>Projects</h2>
+
+      <div class="projects">
+        <article class="proj">
+          <h4>Quantum Alzheimer’s Prediction</h4>
+          <p class="muted">Quantum Neural Network using Qiskit for MRI classification.</p>
+          <div class="tags">
+            <div class="tag">Python</div>
+            <div class="tag">Qiskit</div>
+            <a class="tag" target="_blank" href="https://github.com/Veerendra1104/Quantum_Alzheimer_Project">GitHub</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h4>Portfolio Builder (JWT + Spring Boot)</h4>
+          <p class="muted">Full-stack portfolio builder with authentication and admin dashboard.</p>
+          <div class="tags">
+            <div class="tag">React</div>
+            <div class="tag">Spring Boot</div>
+            <a class="tag" target="_blank" href="https://github.com/Veerendra1104/Porfoli_SpringBoot_Jwt">GitHub</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h4>Movie-Actor Management (Hibernate)</h4>
+          <p class="muted">Many-to-many entity mapping, cascading, and optimized JPQL queries.</p>
+          <div class="tags">
+            <div class="tag">Hibernate</div>
+            <div class="tag">JPA</div>
+            <a class="tag" target="_blank" href="https://github.com/Veerendra1104/Java_Hibernate">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="card-section">
+      <h2>Internship & Education</h2>
+
+      <div class="timeline">
+        <div class="event">
+          <strong>Dhee Coding Lab — Java Full Stack Intern</strong>
+          <div class="small muted">Feb 2025 – Present</div>
+          <p class="muted">Working on REST APIs, Spring Boot services, React integration, and solving real-time bugs.</p>
+        </div>
+
+        <div class="event">
+          <strong>PESITM — B.E CSE</strong>
+          <div class="small muted">CGPA: 8.5 • Graduated 2025</div>
+        </div>
+
+        <div class="event">
+          <strong>Certifications</strong>
+          <div class="small muted">Java 17 Masterclass • Python Bootcamp • Linux • PHP</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="card-section">
+      <h2>Contact</h2>
+
+      <div class="contact-grid">
+        <div class="contact-card">📞 <strong>Phone</strong><div class="small muted">+91 6362435914</div></div>
+        <div class="contact-card">✉️ <strong>Email</strong><div class="small muted">msveerendraveerendra9954@gmail.com</div></div>
+        <div class="contact-card">📍 <strong>Location</strong><div class="small muted">Bangalore, India</div></div>
+      </div>
+
+      <form id="contactForm" onsubmit="handleSubmit(event)" class="contact-form">
+        <input id="name" name="name" placeholder="Your name" required />
+        <input id="email" name="email" type="email" placeholder="Email" required />
+        <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <button type="button" class="btn ghost" onclick="window.open('mailto:msveerendraveerendra9954@gmail.com')">Email me</button>
+        </div>
+
+        <div id="formMsg" class="small muted" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      © 2025 M S Veerendra — Crafted with passion.
     </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
